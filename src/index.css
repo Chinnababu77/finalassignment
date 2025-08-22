@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ring: theme(colors.primary.500);
+}
+
+.input-base {
+  @apply w-full rounded-xl border focus:outline-none disabled:opacity-60 disabled:cursor-not-allowed transition-all;
+}
+
+.label-base {
+  @apply mb-1 block text-sm font-medium text-gray-700 dark:text-gray-200;
+}
+
+.helper-text {
+  @apply mt-1 text-xs text-gray-500 dark:text-gray-400;
+}
+
+.error-text {
+  @apply mt-1 text-xs text-red-600;
+}

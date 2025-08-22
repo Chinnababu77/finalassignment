@@ -1,0 +1,26 @@
+npm ERR! code ERESOLVE
+npm ERR! ERESOLVE unable to resolve dependency tree
+npm ERR! 
+npm ERR! While resolving: react-components-assignment@1.0.0
+npm ERR! Found: vitest@1.6.1
+npm ERR! node_modules/vitest
+npm ERR!   dev vitest@"^1.6.0" from the root project
+npm ERR!   peer vitest@"1.6.1" from @vitest/ui@1.6.1
+npm ERR!   node_modules/@vitest/ui
+npm ERR!     peerOptional @vitest/ui@"1.6.1" from vitest@1.6.1
+npm ERR! 
+npm ERR! Could not resolve dependency:
+npm ERR! peerOptional vitest@"^2.1.1 || ^3.0.0" from @storybook/experimental-addon-test@8.6.14
+npm ERR! node_modules/@storybook/experimental-addon-test
+npm ERR!   dev @storybook/experimental-addon-test@"^8.6.14" from the root project
+npm ERR! 
+npm ERR! Fix the upstream dependency conflict, or retry
+npm ERR! this command with --force or --legacy-peer-deps
+npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
+npm ERR! 
+npm ERR! 
+npm ERR! For a full report see:
+npm ERR! /home/youknowmyname/.npm/_logs/2025-08-22T14_51_48_380Z-eresolve-report.txt
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /home/youknowmyname/.npm/_logs/2025-08-22T14_51_48_380Z-debug-0.log
