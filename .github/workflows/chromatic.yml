@@ -1,0 +1,31 @@
+name: "Chromatic Deployment"
+
+on:
+  push:
+    branches:
+      - main   # runs when you push to main
+  pull_request:   # also runs for PRs
+    branches:
+      - main
+
+jobs:
+  chromatic-deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Publish to Chromatic
+        uses: chromaui/action@v1
+        with:
+          projectToken: chpt_a3bc29bdefe9b10
+          exitOnceUploaded: true
+
